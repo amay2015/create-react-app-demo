@@ -1,0 +1,18 @@
+.scrollbar(@opacity: .6) {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    /*! autoprefixer: off */
+    // -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(183, 185, 190, @opacity);
+  }
+
+  &::-webkit-scrollbar-track {
+    /*! autoprefixer: off */
+    // -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, .2);
+  }
+}

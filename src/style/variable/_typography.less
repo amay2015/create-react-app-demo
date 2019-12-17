@@ -1,0 +1,28 @@
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+@font-family-sans-serif:  -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+@font-family-serif:       Georgia, 'Times New Roman', Times, \5b8b\4f53, Simsun, serif;
+@font-family-monospace:   Menlo, Monaco, Consolas, 'Courier New', monospace;  //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          14px;                                // 主字号
+@font-size-small:         ceil((@font-size-base * 0.8125));   // ~13px
+@font-size-normal:        ceil((@font-size-base * 0.875));   // ~14px
+@font-size-regular:       @font-size-base;                  // ~16px
+@font-size-medium:        ceil((@font-size-base * 1.125));   // ~18px
+@font-size-large:         ceil((@font-size-base * 1.25));     // ~20px
+@font-size-xlarge:        ceil((@font-size-base * 1.5));     // ~24px
+@font-size-xxlarge:       floor((@font-size-base * 1.875)); // ~30px
+@font-size-xxxlarge:      floor((@font-size-base * 2.25)); // ~36px
+
+@font-weight-light:       300;
+@font-weight-regular:     400;
+@font-weight-medium:      500;
+@font-weight-bold:        600;
+
+// Line Height
+
+@line-height-small:       1.2;
+@line-height-base:        1.5; // 24/16
+@line-height-large:       1.8;

@@ -1,0 +1,33 @@
+@import "../../_variable.less";
+@import "../../_mixin.less";
+
+.btn_fill.btn-danger_fill {
+  color: #fff;
+  background-color: @primary-color;
+  border-color: @primary-color;
+}
+
+.btn-cancel {
+  color: @gray-light;
+  background-color: #fff;
+  border-color: @gray-light;
+}
+
+.btn.btn-line {
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 0;
+  border-color: @primary-color;
+  color: @primary-color;
+  background-color: #fff;
+  .icon {
+    margin-left: 0;
+  }
+  &.btn-line_danger {
+    &:active,&.active {
+      color: #fff;
+      background-color: @primary-color;
+      border-color: @primary-color;
+    }
+  }
+}

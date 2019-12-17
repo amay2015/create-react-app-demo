@@ -1,0 +1,20 @@
+// Text overflow
+// Requires inline-block or block for proper styling
+
+.text-ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+  white-space: nowrap;
+}
+
+// 文字超过多少行就...(仅webkit内核)
+.multiline-text-ellipsis(@line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: @line;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+}

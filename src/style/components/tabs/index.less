@@ -1,0 +1,15 @@
+@import "../../_variable.less";
+@import "../../_mixin.less";
+
+
+.ghc-tabs { // 不能直接重置第三方库，需要加一个命名空间，只对这个 namespace 下的组件生效，可预测性
+  .ant-tabs-nav { // 重置第三方库
+    .ant-tabs-tab:hover,
+    .ant-tabs-tab-active {
+      color: @tab-active;
+    }
+  }
+  .ant-tabs-ink-bar {
+    background-color: @tab-active;
+  }
+}

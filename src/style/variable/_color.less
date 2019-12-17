@@ -1,0 +1,39 @@
+// Color system
+
+@primary-color: #104F73;                         // 全局主色
+@success-color: #52c41a;                         // 成功色
+@warning-color: #faad14;                         // 警告色
+@error-color:   #f5222d;                         // 错误色
+@danger-color:  #ff4d4f;                         // 错误色
+
+// Global textual link color.
+
+@link-color:     #67c6dd; // 链接色
+@link-hover-color: darken(@link-color, 15%);
+
+// Gray
+
+@gray-base:  #000;
+@gray-darker:  lighten(@gray-base, 13.5%); // #222
+@gray-dark:    lighten(@gray-base, 20%); // #333
+@gray:         lighten(@gray-base, 33.5%); // #555
+@gray-light:   lighten(@gray-base, 46.7%); // #777
+@gray-lighter: lighten(@gray-base, 93.5%); // #eee
+
+// Scaffolding
+
+@body-bg:                 rgba(204,204,204,0.25);                 //
+@heading-color:           rgba(0, 0, 0, .85);              // 标题色
+@text-color:              rgba(0, 0, 0, .65);                 // 主文本色
+@text-color-secondary :   rgba(0, 0, 0, .45);      // 次文本色
+@strong-color:            #e92937;                          // 另一个“主”色，强烈色彩
+@box-shadow-base:           0 2px 8px rgba(0, 0, 0, .15);  // 浮层阴影
+@border-color-base:       #eceff4;                     // 边框色
+
+// Component
+
+@tab-active:         @link-color;
+
+// Ant Design 定制主题：https://ant.design/docs/react/customize-theme-cn
+// https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
+// 变量命名参考：https://bulma.io/documentation/customize/variables/
